@@ -1,0 +1,19 @@
+{
+  "name": "Trustlines Forum Light UI",
+  "about_url": "https://meta.discourse.org/t/material-design-stock-theme/47142",
+  "license_url": "https://github.com/discourse/material-design-stock-theme/blob/master/LICENSE.txt",
+  "color_schemes": {
+    "Trustlines Light UI": {
+      "primary": "12121F",
+      "secondary": "ffffff",
+      "tertiary": "c0b0ff",
+      "quaternary": "EDEDED",
+      "header_background": "ffffff",
+      "header_primary": "12121F",
+      "highlight": "F8F8F8",
+      "danger": "e45735",
+      "success": "009900",
+      "love": "fa6c8d"
+    }
+  }
+}
