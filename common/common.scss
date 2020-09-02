@@ -110,23 +110,25 @@ body textarea {
 }
 
 .banner-box {
-  background: linear-gradient(164.79deg, #1A007D 8.17%, #7E2100 118.43%) !important;
-  color: #EDEDED !important;
+  background: linear-gradient(136.33deg, #FF7C4E 8.17%, #FFA0B7 118.43%) !important;
+  color: #f8f8f8 !important;
   font-size: 14px !important;
   line-height: 140% !important;
+  font-weight: 400;
 }
 
 .banner-box h1,
 .banner-box h2,
 .banner-box h3 {
-  color: #EDEDED !important;
+  color: #f8f8f8 !important;
   font-size: 19px !important;
   line-height: 120% !important;
+  font-weight: 600;
 }
 
 tr {
-  border-radius: 50px !important;
-  background-color: #18183C !important;
+  border-radius: 8px !important;
+  background-color: #f8f8f8 !important;
 }
 
 .category-list tbody .category {
@@ -134,7 +136,7 @@ tr {
 }
 
 .column .latest-topic-list-item {
-  background-color: #18183C !important;
+  background-color: #f8f8f8 !important;
   border-radius: 8px;
 }
 
@@ -144,7 +146,7 @@ tr {
 }
 
 .latest-topic-list .table-heading {
-  background-color: #18183C !important;
+  background-color: #F8F8F8 !important;
   border-radius: 8px 0 0 8px;
   line-height: 120%;
   font-size: 16;
@@ -159,13 +161,13 @@ tr {
 }
 
 .category-list td.topics {
-  border-radius: 0 20px 20px 0 !important;
+  border-radius: 0 8px 8px 0 !important;
 }
 
 .list-controls .combo-box .combo-box-header {
-  background-color: #0A0A2A;
-  color: #8181CB;
-  border: 1px solid #8181CB;
+  background-color: #ffffff;
+  color: #7657ED;
+  border: 2px solid #7657ED;
   font-size: 16px;
   transition: none;
   border-radius: 8px;
@@ -187,13 +189,13 @@ tr {
 .badge-wrapper.box span.badge-category-bg {
   border-radius: 8px;
   margin-right: 5px;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .badge-category {
   padding: 3px 10px 5px 5px;
   font-size: 12px;
-  color: #EDEDED !important;
+  color: #f8f8f8 !important;
   line-height: 143.6%;
 }
 
@@ -212,7 +214,13 @@ table th {
 }
 
 .latest-topic-list-item .topic-last-activity a {
-  color: #9C99B1 !important;
+  color: #12121F !important;
+  font-weight: 500;
+}
+
+.topic-list-item.visited a.title:not(.badge-notification), .latest-topic-list-item.visited a.title:not(.badge-notification), .category-topic-link.visited a.title:not(.badge-notification) {
+  color: #12121F !important;
+  font-weight: 500;
 }
 
 .badge-wrapper.box span.badge-category-parent-bg {
@@ -236,6 +244,8 @@ table th {
 
 .discourse-tag.box {
   border-radius: 4px;
+  background-color: #ededed !important;
+  color: #6C6C73 !important;
 }
 
 .category-list .topics .value {
@@ -254,9 +264,10 @@ table th {
 .banner-box .section-header .description p {
   font-family: 'Inter';
   font-style: normal !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   font-size: 48px !important;
   line-height: 120% !important;
+  letter-spacing: -1px;
 }
 
 a.title {
@@ -278,7 +289,7 @@ a.title:visited {
 .topic-meta-data .post-info a,
 a.topic-featured-link,
 aside.onebox header a[href] {
-  color: #c0b0ff;
+  color: #7657ED;
 }
 
 .category-boxes-with-topics .category-box {
@@ -291,12 +302,13 @@ aside.onebox header a[href] {
 }
 
 #create-topic.btn-default {
-  background-color: #2600B6 !important;
+  background-color: var(--tertiary-low) !important;
+  color: #12121F !important;
 }
 
 .user-menu .quick-access-panel li:focus,
 .user-menu .quick-access-panel li:hover, .discourse-no-touch .sortable:hover {
-  background-color: #151544;
+  background-color: var(--tertiary-low);
 }
 
 nav.post-controls .actions button.d-hover,
@@ -311,11 +323,11 @@ aside.onebox {
 }
 
 tr {
-  border-bottom: 1px solid #474796;
+  border-bottom: 1px solid #ededed;
 }
 
 tbody {
-  border-top: 3px solid #474796;
+  border-top: 3px solid #ededed;
 }
 
 nav.post-controls .actions a, nav.post-controls .actions button {
@@ -323,7 +335,7 @@ nav.post-controls .actions a, nav.post-controls .actions button {
 }
 
 .topic-body {
-  border-top: 1px solid #474796;
+  border-top: 1px solid var(--primary-low);
 }
 
 .topic-map {
@@ -335,4 +347,50 @@ nav.post-controls .actions a, nav.post-controls .actions button {
 .topic-map .buttons .btn, .topic-map section {
   background: #151544;
   border: 1px solid #474796;
+}
+
+.nav-pills > li > a:hover {
+  color: var(--tertiary);
+}
+
+.custom-header-links .headerLink a {
+  color: #12121f;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+.badge-wrapper .badge-category .category-name {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.d-header-icons .d-icon {
+  color: #12121F !important;
+}
+
+a.post-activity {
+  color: var(--primary);
+}
+
+a.post-activity:visited {
+  color: var(--primary);
+}
+
+.btn-danger[href] {
+  color: var(--danger);
+}
+
+.discourse-no-touch .btn-danger[href]:hover, .discourse-no-touch .btn-danger[href].btn-hover {
+  border: 2px solid var(--danger) !important;
+  color: var(--danger) !important;
+}
+
+.widget-button.btn.create {
+  background-color: var(--tertiary-low) !important;
+}
+
+.post-notice {
+  border-top: none;
+  margin-top: 0.8em;
 }
