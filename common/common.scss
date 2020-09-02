@@ -90,7 +90,8 @@ body textarea {
 }
 
 .custom-footer .list span {
-  font-weight: 400;
+  font-weight: 400 !important;
+  letter-spacing: 0px !important;
 }
 
 .d-header {
@@ -193,7 +194,7 @@ tr {
 }
 
 .badge-category {
-  padding: 3px 10px 5px 5px;
+  padding: 5px 10px 5px 5px;
   font-size: 12px;
   color: #f8f8f8 !important;
   line-height: 143.6%;
@@ -271,11 +272,11 @@ table th {
 }
 
 a.title {
-  color: #ededed;
+  color: var(--primary);
 }
 
 a.title:visited {
-  color: #ededed;
+  color: var(--primary);
 }
 
 .custom-header-links .headerLink a:hover,
@@ -313,8 +314,7 @@ aside.onebox header a[href] {
 
 nav.post-controls .actions button.d-hover,
 nav.post-controls .actions button:focus {
-  background: #151544;
-  border-radius: 8px;
+  background: var(--tertiary-low);
 }
 
 aside.onebox {
@@ -339,14 +339,15 @@ nav.post-controls .actions a, nav.post-controls .actions button {
 }
 
 .topic-map {
-  background: #151544;
-  border: 1px solid #474796;
+  background: var(--tertiary-low);
+  border: none;
   border-radius: 8px;
 }
 
 .topic-map .buttons .btn, .topic-map section {
-  background: #151544;
-  border: 1px solid #474796;
+  background: var(--tertiary-low);
+  border: none;
+  border-radius: 8px;
 }
 
 .nav-pills > li > a:hover {
@@ -393,4 +394,12 @@ a.post-activity:visited {
 .post-notice {
   border-top: none;
   margin-top: 0.8em;
+}
+
+a:hover {
+  color: var(--tertiary-hover);
+}
+
+.custom-footer .first-box .heading {
+  color: var(--primary) !important;
 }
