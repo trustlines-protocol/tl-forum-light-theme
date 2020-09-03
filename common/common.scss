@@ -130,6 +130,7 @@ body textarea {
 tr {
   border-radius: 8px !important;
   background-color: #f8f8f8 !important;
+  box-shadow: none !important;
 }
 
 .category-list tbody .category {
@@ -148,10 +149,11 @@ tr {
 
 .latest-topic-list .table-heading {
   background-color: #F8F8F8 !important;
-  border-radius: 8px 0 0 8px;
+  border-radius: 8px;
   line-height: 120%;
   font-size: 16;
   padding-left: 10px;
+  box-shadow: none !important;
 }
 
 .category-list th {
@@ -336,6 +338,7 @@ nav.post-controls .actions a, nav.post-controls .actions button {
 
 .topic-body {
   border-top: 1px solid var(--primary-low);
+  border-radius: 8px !important;
 }
 
 .topic-map {
@@ -402,4 +405,25 @@ a:hover {
 
 .custom-footer .first-box .heading {
   color: var(--primary) !important;
+}
+
+th.category {
+    border-radius: 8px 0 0 8px;
+}
+
+th.topics {
+    border-radius: 0 8px 8px 0;
+}
+
+.topic-list {
+  box-shadow: none !important;
+  border-radius: 8px;
+}
+
+table th.default {
+    border-radius: 8px 0 0 0;
+}
+
+table th.activity {
+    border-radius: 0 8px 0 0;
 }
